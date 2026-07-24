@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
-  <rect width="500" height="500" fill="#17171a"/>
-  <circle cx="250" cy="250" r="150" fill="none" stroke="#3a3a40" stroke-width="2"/>
-  <text x="250" y="255" font-family="Arial, sans-serif" font-size="16" fill="#7a7a80" text-anchor="middle">
-    PLACEHOLDER 1:1
-  </text>
-</svg>
