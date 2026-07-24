@@ -4,11 +4,17 @@
 
 ## Структура
 
+Усі файли лежать пласко, без підпапок:
+
 ```
-index.html                          — головна сторінка
-articles/2026-toyota-gr86-...html   — пробна стаття (реальний текст + мета-теги)
-css/style.css                       — усі стилі
-images/*.svg                        — SVG-заповнювачі замість фото (легкі, без залежності від інтернету)
+index.html                              — головна сторінка
+article-gr86-review.html                — огляд Toyota GR86
+news-polestar-us-ban.html               — новина про Polestar
+audi-a8-discontinued-investment.html    — стаття про Audi A8
+bmw-n54-known-issues.html               — стаття Known Issues про BMW N54
+style.css                               — усі стилі
+hero-*.jpg / card-*.jpg / featured-*.jpg / thumb-*.jpg  — реальні фото для кожної статті
+logo.png                                — логотип AutoGlob
 ```
 
 ## Як розмістити на GitHub Pages
