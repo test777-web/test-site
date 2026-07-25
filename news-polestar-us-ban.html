@@ -113,6 +113,26 @@
   </div>
 </div>
 
+<script>
+(function () {
+  var btn = document.getElementById("themeToggle");
+  if (!btn) return;
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem("autoglob-theme"); } catch (e) {}
+  if (saved === "light") root.setAttribute("data-theme", "light");
+  btn.onclick = function () {
+    var isLight = root.getAttribute("data-theme") === "light";
+    if (isLight) {
+      root.removeAttribute("data-theme");
+      try { localStorage.setItem("autoglob-theme", "dark"); } catch (e) {}
+    } else {
+      root.setAttribute("data-theme", "light");
+      try { localStorage.setItem("autoglob-theme", "light"); } catch (e) {}
+    }
+  };
+})();
+</script>
 <script src="site.js?v=4"></script>
 </body>
 </html>
