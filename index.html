@@ -8,7 +8,27 @@
 <meta name="description" content="AutoGlob covers classic, JDM, German and American cars with honest reviews, ownership costs, and buying guides.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
+<link rel="canonical" href="https://test777-web.github.io/test-site/index.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AutoGlob",
+  "url": "https://test777-web.github.io/test-site/index.html",
+  "logo": "https://test777-web.github.io/test-site/logo.png",
+  "sameAs": []
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://test777-web.github.io/test-site/index.html"}
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -47,7 +67,7 @@
 
   <section class="spotlight">
     <a href="news-polestar-us-ban.html">
-      <img src="hero-polestar-1200x630.jpg" alt="Polestar sedan parked at a US dealership">
+      <img src="hero-polestar-1200x630.jpg" alt="Polestar sedan parked at a US dealership" loading="eager" fetchpriority="high" width="1200" height="750">
     </a>
     <div>
       <div class="kicker">News</div>
@@ -57,11 +77,29 @@
     </div>
   </section>
 
+  <section style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:10px 0 30px;">
+    <a href="tools.html" style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;">
+      <div style="color:var(--accent-red);font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:6px;">New</div>
+      <div style="font-weight:700;margin-bottom:4px;">Car Calculators</div>
+      <div style="color:var(--text-muted);font-size:13px;">Tire size, loan, fuel cost, depreciation and 6 more free tools.</div>
+    </a>
+    <a href="vin-decoder.html" style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;">
+      <div style="color:var(--accent-red);font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:6px;">New</div>
+      <div style="font-weight:700;margin-bottom:4px;">VIN Decoder</div>
+      <div style="color:var(--text-muted);font-size:13px;">Look up any vehicle's specs from its 17-character VIN, free.</div>
+    </a>
+    <a href="compare.html" style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;">
+      <div style="color:var(--accent-red);font-size:12px;font-weight:700;text-transform:uppercase;margin-bottom:6px;">New</div>
+      <div style="font-weight:700;margin-bottom:4px;">Compare Cars</div>
+      <div style="color:var(--text-muted);font-size:13px;">Side-by-side specs for every car covered on AutoGlob.</div>
+    </a>
+  </section>
+
   <h2 class="section-title" id="recent-articles">Recent Articles</h2>
   <section class="articles-grid">
     <article class="article-card" data-category="Reviews">
       <a href="article-gr86-review.html">
-        <img src="card-gr86-4x3.jpg" alt="2026 Toyota GR86 Yuzu Edition">
+        <img src="card-gr86-4x3.jpg" alt="2026 Toyota GR86 Yuzu Edition" loading="lazy" width="800" height="600">
         <div class="kicker">Reviews</div>
         <h4>I Drove the 2026 Toyota GR86 Yuzu Edition: Here's My Honest Review</h4>
       </a>
@@ -69,7 +107,7 @@
     </article>
     <article class="article-card" data-category="Known Issues">
       <a href="bmw-n54-known-issues.html">
-        <img src="card-bmw-n54-4x3.jpg" alt="BMW N54 engine bay">
+        <img src="card-bmw-n54-4x3.jpg" alt="BMW N54 engine bay" loading="lazy" width="800" height="600">
         <div class="kicker">Known Issues</div>
         <h4>BMW's N54 Twin-Turbo: The Known Issues Nobody Mentions</h4>
       </a>
@@ -77,7 +115,7 @@
     </article>
     <article class="article-card" data-category="Car as Investment">
       <a href="audi-a8-discontinued-investment.html">
-        <img src="card-audi-a8-4x3.jpg" alt="Audi A8 rear view">
+        <img src="card-audi-a8-4x3.jpg" alt="Audi A8 rear view" loading="lazy" width="800" height="600">
         <div class="kicker">Car as Investment</div>
         <h4>The Audi A8 Is Done After 2026: Should You Buy One?</h4>
       </a>
@@ -117,6 +155,10 @@
     <div>
       <h5>Vehicle Types</h5>
       <ul><li>SUV</li><li>Electric</li><li>Hybrids</li><li>Coupes</li></ul>
+    </div>
+    <div>
+      <h5>Tools</h5>
+      <ul><li><a href="tools.html">Calculators</a></li><li><a href="vin-decoder.html">VIN Decoder</a></li><li><a href="compare.html">Compare Cars</a></li></ul>
     </div>
     <div>
       <h5>Company</h5>
@@ -180,6 +222,6 @@
   };
 })();
 </script>
-<script src="site.js?v=4"></script>
+<script src="site.js?v=5"></script>
 </body>
 </html>
