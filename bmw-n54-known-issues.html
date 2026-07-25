@@ -6,32 +6,45 @@
 <title>BMW's N54 Twin-Turbo: The Known Issues Nobody Mentions at the Dealership | AutoGlob</title>
 <meta name="description" content="The BMW N54 is one of the most tunable engines ever built. It's also one of the most failure prone. Here's what actually breaks, and what it costs.">
 
-<!-- Open Graph -->
 <meta property="og:type" content="article">
 <meta property="og:title" content="BMW's N54 Twin-Turbo: The Known Issues Nobody Mentions at the Dealership">
 <meta property="og:description" content="The BMW N54 is one of the most tunable engines ever built. It's also one of the most failure prone. Here's what actually breaks.">
-<meta property="og:image" content="https://REPLACE-WITH-YOUR-DOMAIN/hero-bmw-n54-1200x630.jpg">
-<meta property="og:url" content="https://REPLACE-WITH-YOUR-DOMAIN/bmw-n54-known-issues.html">
+<meta property="og:image" content="https://test777-web.github.io/test-site/hero-bmw-n54-1200x630.jpg">
+<meta property="og:url" content="https://test777-web.github.io/test-site/bmw-n54-known-issues.html">
 <meta property="og:site_name" content="AutoGlob">
 
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="BMW's N54 Twin-Turbo: The Known Issues Nobody Mentions at the Dealership">
 <meta name="twitter:description" content="One of the most tunable engines BMW ever built is also one of the most failure prone. Here's what actually breaks.">
-<meta name="twitter:image" content="https://REPLACE-WITH-YOUR-DOMAIN/hero-bmw-n54-1200x630.jpg">
+<meta name="twitter:image" content="https://test777-web.github.io/test-site/hero-bmw-n54-1200x630.jpg">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="topbar">
+  <div class="container">
+    <button class="linklike" onclick="openModal('newsletterModal')">Newsletter</button>
+    <span id="searchToggle" style="cursor:pointer;" class="linklike">Search</span>
+    <button class="linklike" onclick="openModal('signinModal')">Sign in</button>
+    <button class="theme-toggle" id="themeToggle">☀️ Light</button>
+  </div>
+</div>
+
 <header class="site-header">
   <div class="header-inner">
-    <a class="logo" href="index.html"><img src="logo.png" alt="AutoGlob logo"></a>
+    <a href="index.html" class="logo-text">
+      <span class="word"><span class="auto">Auto</span><span class="glob">Glob</span></span>
+      <span class="underline"></span>
+    </a>
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html">Reviews</a></li>
-        <li><a href="index.html">News</a></li>
-        <li><a href="index.html">Car Buying</a></li>
+        <li><a href="index.html#recent-articles" data-filter="all">News</a></li>
+        <li><a href="index.html#recent-articles" data-filter="Reviews">Reviews</a></li>
+        <li><a href="index.html#recent-articles" data-filter="Known Issues" class="active">Known Issues</a></li>
+        <li><a href="index.html#recent-articles" data-filter="Car as Investment">Car as Investment</a></li>
       </ul>
     </nav>
   </div>
@@ -80,5 +93,27 @@
   </div>
 </footer>
 
+<div class="modal-overlay" id="newsletterModal">
+  <div class="modal-box">
+    <h3>Subscribe to AutoGlob</h3>
+    <p>Get new reviews and car news in your inbox. (Demo form, not yet connected to an email service.)</p>
+    <form id="newsletterForm">
+      <input type="email" placeholder="you@email.com" required>
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
+    <p class="modal-msg" id="newsletterMsg">Thanks! This is a demo, no email was actually sent.</p>
+    <button class="close-modal" onclick="closeModal('newsletterModal')">Close</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="signinModal">
+  <div class="modal-box">
+    <h3>Sign in</h3>
+    <p>Accounts aren't set up yet on this demo build. This is a placeholder for when login is wired to a real backend.</p>
+    <button class="close-modal" onclick="closeModal('signinModal')">Close</button>
+  </div>
+</div>
+
+<script src="site.js"></script>
 </body>
 </html>
