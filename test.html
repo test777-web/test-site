@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тест кнопки</title>
+</head>
+<body style="font-family:sans-serif;text-align:center;padding:40px;background:#081625;color:white;">
+  <h1 id="status">Натисків: 0</h1>
+  <button id="btn" style="font-size:24px;padding:20px 40px;border-radius:10px;border:none;background:#12d6d0;color:#04201f;font-weight:bold;">
+    НАТИСНИ МЕНЕ
+  </button>
+  <p id="log" style="margin-top:30px;font-size:14px;color:#8b96a3;"></p>
+
+  <script>
+    var count = 0;
+    document.getElementById('btn').addEventListener('click', function() {
+      count++;
+      document.getElementById('status').textContent = 'Натисків: ' + count;
+      document.body.style.background = (count % 2 === 0) ? '#081625' : '#f5f7fa';
+      document.body.style.color = (count % 2 === 0) ? 'white' : '#081625';
+      document.getElementById('log').textContent = 'JavaScript працює! Клік зафіксовано о ' + new Date().toLocaleTimeString();
+    });
+  </script>
+</body>
+</html>
