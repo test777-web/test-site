@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://test777-web.github.io/test-site/sitemap.xml
